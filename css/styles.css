@@ -475,6 +475,7 @@ padding-top: 100px;
 padding-bottom: 100px;
 background-color: var(--second-color);
 
+
 }
 .footer-logotype{
     color: var(--footer-second-color);
@@ -514,6 +515,7 @@ gap: 16px;
 }
 .container-one{
 display: flex;
+
 }
 .footer-item{
 width: 40px;
@@ -542,6 +544,84 @@ transition: fill var(--transition-dur-and-func);
 .footer-social{
 margin-left: 120px;
 }
+
+.footer-sub-container {
+margin-left: 80px;
+        
+}
+
+.sub-text {
+
+   font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin-bottom: 16px;
+
+}
+.sub-modal-input::placeholder{
+    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--main-title-color);
+    align-items: center;
+}
+
+
+
+.sub-modal-input {
+    width: 264px;
+    height: 40px;
+    background-color: var(--second-color);
+    border: 1px solid var(--main-title-color);
+    border-radius: 4px;
+   outline: transparent;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   color: var(--main-title-color);
+   padding-left: 16px;
+}
+
+  .inp-btn{
+    display: flex;
+    gap: 24px;
+  }
+
+
+.footer-button {
+        min-width: 165px;
+        height: 40px;
+      
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--main-title-color);
+        background-color: var(--second-btn-color);
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+     padding: 8px 24px;
+        transition: background-color var(--transition-dur-and-func);
+    }
+
+.footer-button:hover{
+    background-color: var(--main-btn-color);}
+.footer-text-btn {
+    display: flex;
+    justify-items: center;
+
+}
+
+.footer-btn-icon{
+    fill: var(--main-title-color);
+    padding-left: 16px;
+}
+
+
+
 .root{
     background-color: var(--main-title-color);
 }
@@ -621,6 +701,7 @@ box-shadow 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 
 display: flex;
 justify-content: center;
 }
+
 .portfolio-list-btn .work-item + .work-item {
     margin-left: 24px;
 }
@@ -665,8 +746,9 @@ overflow: hidden;
 .link-cards-portfolio:hover .overlay{
  transform: translate(0);
 }
-.portfolio-btn:hover{color: var(--main-title-color) ;
-  background-color: var(--main-btn-color); 
+.portfolio-btn:hover{
+color: var(--main-title-color) ;
+background-color: var(--main-btn-color); 
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
  border-color: var(--main-btn-color);
 }
@@ -723,6 +805,7 @@ transform: translate(-50%, -50%) scale(1);
  border-radius: 4px;
  padding-left: 24px ;
  padding-right: 24px;
+padding-bottom: 24px;
 transition: transform var(--transition-dur-and-func)
 
 }
@@ -753,7 +836,7 @@ transition: transform var(--transition-dur-and-func)
     margin: 0;
     color: var(--second-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-transition: background-color var(--transition-dur-and-func);
+    transition: background-color (var(--transition-dur-and-func)) ;
      
 }
 .modal-close-btn-icon{
@@ -762,7 +845,8 @@ transition: fill var(--transition-dur-and-func);
 
 
 } 
-.modal-close-btn:hover,:focus{
+.modal-close-btn:hover,
+.modal-close-btn:focus{
 background-color: var(--main-btn-color);
 fill: var(--main-title-color);
 }
@@ -801,22 +885,25 @@ fill: var(--main-title-color);
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    color: #2e2f42;
+    color: var(--second-color);
 }
 
 
-.modal-field{
-margin-bottom: 8px;
-}
+
+
+
+
 .input-wrap{
     position: relative;
+    
 }
 
 .input-text{
     display: inline-block;
     font-size: 12px;
+    margin-top: 8px;
     margin-bottom: 4px;
-    color: #8e8f99;
+    color: var(--fill-icon);
 }
 .modal-textarea{
     width: 100%;
@@ -824,8 +911,10 @@ margin-bottom: 8px;
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     resize: none;
-    padding: 16px;
+    padding-left: 16px;
     padding-top: 8px;
+
+
     border-radius: 4px;
    transition: border-color var(--transition-dur-and-func);
 }
@@ -834,17 +923,46 @@ margin-bottom: 8px;
 
 
 .modal-textarea:focus {
-border-color: var(--main-btn-color);
+    border-color: var(--main-btn-color);
+    outline: none;
 }
-.modal-form-check-desk{
+
+
+.check-text{
+font-size: 12px;
+display: flex;
+align-items: center;
+
+color: var(--fill-icon);
+}
+
+
+.check-text span{
+    width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        display: flex;
+        margin-right: 8px;
     
-    font-size: 12px;
-    color: #8e8f99;
-    margin-top: 16px;
+        align-items: center;
+        justify-content: center;
+    fill: transparent;
+    transition: background-color (var(--transition-dur-and-func));
+    }
+.input-check:checked + .check-text span{
+background-color: var(--main-btn-color);
+fill: var(--footer-second-color);
 }
-.link-privacy{
-color: #4D5AE5;
+.input-check:focus + .check-text span{
+    border-color: var(--main-btn-color) ;
 }
+.modal-policy{
+    margin-left: 4px;
+}
+
+
 .modal-button{
     min-width: 169px;
     height: 56px;
@@ -861,11 +979,16 @@ color: #4D5AE5;
     padding: 16px 32px;
     transition: background-color var(--transition-dur-and-func);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    box-shadow: 
+       0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+    
+   
+
 .modal-button:hover {
     background-color: var(--main-btn-color);
 }
@@ -875,31 +998,3 @@ color: #4D5AE5;
 
 
 
-
- .chek-text span{
-        width: 16px;
-        height: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #404bbf;
-            fill: #f4f4fd;
- 
-    }
-
- 
-   
-
-.check-icon:focus{
-    background-color: #404bbf;
-    fill: #f4f4fd;
-}
-.chek-text{
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-right: 8px;
-}

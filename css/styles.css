@@ -560,8 +560,12 @@ margin-left: 120px;
 }
 
 .footer-sub-container {
-margin-left: 80px;
+margin-left: auto;
         
+}
+.footer-sub{
+    display: flex;
+    gap: 24px;
 }
 
 .sub-text {
@@ -600,16 +604,15 @@ margin-left: 80px;
 
 }
 
-  .inp-btn{
-    display: flex;
-    gap: 24px;
-  }
+ 
 
 
 .footer-button {
         min-width: 165px;
         height: 40px;
-      
+      display: flex;
+      justify-content: center;
+      align-items: center;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -815,13 +818,13 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%) scale(1);
- width: 408px;
- height: 576px; 
+ width: 408px; 
  background-color:var(--color-modal-bg) ;  
  border-radius: 4px;
  padding-left: 24px ;
  padding-right: 24px;
 padding-bottom: 24px;
+padding-top: 72px;
 transition: transform var(--transition-dur-and-func)
 
 }
@@ -852,14 +855,11 @@ transition: transform var(--transition-dur-and-func)
     margin: 0;
     color: var(--second-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: background-color (var(--transition-dur-and-func)) ;
-     
+    transition: background-color var(--transition-dur-and-func);
+
 }
-.modal-close-btn-icon{
-transition: fill var(--transition-dur-and-func);
-
-
-
+.modal-close-btn-icon {
+    transition: fill var(--transition-dur-and-func);
 } 
 .modal-close-btn:hover,
 .modal-close-btn:focus{
@@ -872,7 +872,6 @@ fill: var(--main-title-color);
    font-weight: 500; 
    text-align: center;
    line-height: 1.5;
-   margin-top: 72px;
    margin-bottom: 16px;
 
 }
@@ -887,7 +886,7 @@ fill: var(--main-title-color);
     
     padding-left: 38px;
     border-radius: 4px;
-   
+    transition: border-color var(--transition-dur-and-func);
 }
 .modal-input:focus {
     border-color: var(--main-btn-color);
@@ -902,6 +901,7 @@ fill: var(--main-title-color);
     top: 50%;
     transform: translateY(-50%);
     color: var(--second-color);
+    transition: color var(--transition-dur-and-func);
 }
 
 
@@ -917,7 +917,6 @@ fill: var(--main-title-color);
 .input-text{
     display: inline-block;
     font-size: 12px;
-    margin-top: 8px;
     margin-bottom: 4px;
     color: var(--fill-icon);
 }
@@ -929,7 +928,7 @@ fill: var(--main-title-color);
     resize: none;
     padding-left: 16px;
     padding-top: 8px;
-margin-bottom: 20px;
+    margin-bottom: 12px;
 
     border-radius: 4px;
    transition: border-color var(--transition-dur-and-func);
@@ -975,6 +974,7 @@ fill: var(--footer-second-color);
 }
 .modal-policy{
     margin-left: 4px;
+    color: var(--first-logo-color);
 }
 
 
@@ -993,20 +993,25 @@ fill: var(--footer-second-color);
     border: none;
     padding: 16px 32px;
     transition: background-color var(--transition-dur-and-func);
-    display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
     box-shadow: 
        0px 4px 4px rgba(0, 0, 0, 0.15);
       
 }
-    
-   
+.modal-field{
+margin-bottom: 8px;
 
+}
+    
+.modal-close-btn{
+transition: fill var(--transition-dur-and-func);
+}
 .modal-button:hover {
     background-color: var(--main-btn-color);
+   
 }
 .modal-button:focus {
     color: var(--main-btn-color);
